@@ -71,13 +71,13 @@ Please specify your app's environment variables in a `.env` file, otherwise Flas
 
 ```sh
 # .env file example
-export FLASK_APP=giya
+export FLASK_APP=start
 
 # configs: production, testing, development, and default (uses DevelopmentConfig)
 export FLASK_CONFIG=development
 
 # Another way of assigning environment variables is:
-FLASK_APP=giya
+FLASK_APP=start
 FLASK_CONFIG=development
 
 # Read more at https://github.com/theskumar/python-dotenv
