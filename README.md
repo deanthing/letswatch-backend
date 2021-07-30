@@ -1,15 +1,8 @@
-# Giya
+# letswatch
 
-An awesome REST boilerplate that uses Flask-RESTX (formerly Flask-RESTPlus).
-It has the usual API features to get you started and off the ground,
-it's also designed to be easily scalable and extendable.
-
-I wrote this boilerplate because I found that a lot of Flask REST boilerplates are either
-doing too much, is lacking, or it simply doesn't fit my needs.
-
+backend for a movie picking service.
 
 # Features
-
 * Full featured framework for fast, easy, and documented API with [Flask-RESTX](https://flask-restx.readthedocs.io/en/latest/)
 * JSON Web Token Authentication with [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/en/stable/)
 * Swagger Documentation (Part of Flask-RESTX).
@@ -99,7 +92,7 @@ $ flask run
 ```
 
 ## Unit testing
-Giya has already some unit tests written, we encourage adding more unit tests as you scale.
+letswatch has already some unit tests written, we encourage adding more unit tests as you scale.
 
 ```sh
 # Unit testing
