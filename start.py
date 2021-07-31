@@ -1,4 +1,5 @@
 from app.models.user import User, Role, Permission
+from app.models.models import UserTwo, Group
 from app import create_app, db
 from flask_migrate import Migrate
 import click
@@ -16,7 +17,7 @@ if os.path.exists(dotenv_path):
 
 # Import models
 
-print("conff",os.getenv("FLASK_CONFIG"))
+print("conff", os.getenv("FLASK_CONFIG"))
 app = create_app(os.getenv("FLASK_CONFIG") or "default")
 migrate = Migrate(app, db)
 
