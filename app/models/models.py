@@ -29,7 +29,7 @@ group_release_table = db.Table('group_release_table', db.Model.metadata,
 class Group(Model):
     __tablename__ = 'group'
     id = Column(db.Integer, primary_key=True)
-    users = relationship("UserTwo", backref="group", lazy=True)
+    users = relationship("User", backref="group", lazy=True)
     likes = relationship("Like", backref="group", lazy=True)
     genres = db.relationship(
         "Genre", secondary=group_genre_table, back_populates="groups", lazy=True)
@@ -54,8 +54,8 @@ class Group(Model):
         return found_movies
 
 
-class UserTwo(Model):
-    __tablename__ = 'usertwo'
+class User(Model):
+    __tablename__ = 'user'
     id = Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80))
     isOwner = db.Column(db.Boolean)
